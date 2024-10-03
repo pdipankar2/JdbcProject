@@ -39,9 +39,12 @@ public class Employe1 {
 
 		System.out.println("Enter Locaton:");
 		String city = s.next();
-
+		    //Dynamic search quary 
+				//we can prepared the quarry based on the input
 		StringBuilder sql = new StringBuilder("select * from employe where 1=1");
 
+		
+		
 		if (dept!=null && !dept.equals("null")) {
 			sql.append(" AND depertment= ?");
 		}
